@@ -1,0 +1,15 @@
+#instructions {
+  border: 1px solid purple;
+}
+
+#display-block {
+  border: 1px solid green;
+}
+
+#win-lose-block {
+  border: 1px solid red;
+}
+
+.row {
+  border: 1px solid blue;
+}
