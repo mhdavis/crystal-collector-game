@@ -27,7 +27,6 @@ function startGame () {
 
   function reset () {
     if (userSum === guessValue) {
-      console.log("entered win condition");
       winNum++;
       $("#jewel-one").off('click');
       $("#jewel-two").off('click');
@@ -41,10 +40,9 @@ function startGame () {
       $("#wins").html(winNum);
 
 
-      return $("#wins").html(winNum);
+      return startGame();
 
     } else if (userSum > guessValue) {
-      console.log("entered lose condition");
       loseNum++;
       $("#jewel-one").off('click');
       $("#jewel-two").off('click');
@@ -55,8 +53,9 @@ function startGame () {
       randomNumTwo = randomIntFromInterval(10, 20);
       randomNumThree = randomIntFromInterval(20, 30);
       randomNumFour = randomIntFromInterval(30, 50);
+      $("#losses").html(loseNum);
 
-      return $("#losses").html(loseNum);
+      return startGame();
     }
   }
 
