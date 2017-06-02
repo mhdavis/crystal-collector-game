@@ -12,6 +12,7 @@
       crossorigin="anonymous"></script>
 
     <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -30,25 +31,31 @@
   <body>
     <div class="container container-fluid">
 
-      <div id="instructions">
-        <p>Here is how you play the game</p>
-      </div>
-
-      <div id="display-block">
-        <p>User: <span id="display-value"></span></p>
-        <p>Player: <span id="player-value"></span></p>
-      </div>
-
-      <div id="win-lose-block">
-        <p>Wins: <span id="wins"></span></p>
-        <p>Loses: <span id="losses"></span></p>
+      <div class="row">
+        <div id="instructions" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <p>Here is how you play the game</p>
+        </div>
       </div>
 
       <div class="row">
-        <button id="jewel-one" class="btn-lg btn-default">1</button>
-        <button id="jewel-two" class="btn-lg btn-danger">2</button>
-        <button id="jewel-three" class="btn-lg btn-warning">3</button>
-        <button id="jewel-four" class="btn-lg btn-success">4</button>
+        <div id="display-block" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <p>User: <span id="display-value"></span></p>
+          <p>Player: <span id="player-value"></span></p>
+        </div>
+
+        <div id="win-lose-block" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <p>Wins: <span id="wins"></span></p>
+          <p>Loses: <span id="losses"></span></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <button id="jewel-one" class="btn custom-button"></button>
+          <button id="jewel-two" class="btn custom-button"></button>
+          <button id="jewel-three" class="btn custom-button"></button>
+          <button id="jewel-four" class="btn custom-button"></button>
+        </div>
       </div>
 
     </div>

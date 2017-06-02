@@ -13,3 +13,36 @@
 .row {
   border: 1px solid blue;
 }
+
+/*red ranger
+154px 305px
+*/
+
+.custom-button {
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-image: url("../img/power_rangers_full.png");
+  border-radius: 20%;
+
+}
+
+/*blue ranger*/
+#jewel-one {
+  background-position:5px 10px;
+}
+
+/*black ranger*/
+#jewel-two {
+  background-position:5px 158px;
+}
+
+/*yellow ranger*/
+#jewel-three {
+  background-position:154px 10px;
+}
+
+/*pink ranger*/
+#jewel-four {
+  background-position:5px 305px;
+}
