@@ -6,10 +6,14 @@ black ranger
 
 html {
   background-image: url("../img/power_rangers_background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 body {
   background: transparent;
+  font-family: "Orbitron", sans-serif;
 }
 
 #custom-container {
@@ -40,6 +44,10 @@ body {
   border-radius: 10px;
   background: #2B2B2B;
   color: white;
+}
+
+#instructions {
+  font-family: 'Comfortaa', cursive;
 }
 
 .custom-button, .custom-button:active {
