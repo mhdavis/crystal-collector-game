@@ -8,6 +8,10 @@ html {
   background-image: url("../img/power_rangers_background.jpg");
 }
 
+body {
+  background: transparent;
+}
+
 #custom-container {
   margin-top: 30px;
 }
@@ -25,28 +29,17 @@ html {
 #subtitle {
   margin-top: -0.6em;
   color: white;
+  border-radius: 10px;
+  border: 2px solid white;
 }
 
 .custom-block {
+  border: 2px solid white;
+  padding: 1em;
+  margin: 0.5em;
   border-radius: 10px;
   background: #2B2B2B;
   color: white;
-}
-
-#instructions {
-  margin: 0.5em;
-}
-
-#display-block {
-  margin: 0.5em;
-}
-
-#win-lose-block {
-  margin: 0.5em;
-}
-
-#button-block {
-  margin: 0.5em;
 }
 
 .custom-button, .custom-button:active {
@@ -55,25 +48,41 @@ html {
   height: 160px;
   background-image: url("../img/power_rangers_full.png");
   border-radius: 20%;
-
+  border: 2px solid;
 }
 
 /*blue ranger*/
-#jewel-one {
+#blue-ranger-icon {
+  border-color: #0051ff;
   background-position:5px 10px;
+}
+#blue-ranger-icon:hover {
+  background-color:#6696FF;
 }
 
 /*red ranger*/
-#jewel-two {
+#red-ranger-icon {
+  border-color: #ec0e0e;
   background-position:154px 305px;
+}
+#red-ranger-icon:hover {
+  background-color: #EF3E3E;
 }
 
 /*yellow ranger*/
-#jewel-three {
+#yellow-ranger-icon {
+  border-color: #ffdb00;
   background-position:154px 10px;
+}
+#yellow-ranger-icon:hover {
+  background-color: #FFE54C;
 }
 
 /*pink ranger*/
-#jewel-four {
+#pink-ranger-icon {
+  border-color: #ffa9ea;
   background-position:5px 305px;
+}
+#pink-ranger-icon:hover {
+  background-color: #FFCBF2;
 }

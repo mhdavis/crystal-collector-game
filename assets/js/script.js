@@ -28,10 +28,10 @@ function startGame () {
   function reset () {
     if (userSum === guessValue) {
       winNum++;
-      $("#jewel-one").off('click');
-      $("#jewel-two").off('click');
-      $("#jewel-three").off('click');
-      $("#jewel-four").off('click');
+      $("#blue-ranger-icon").off('click');
+      $("#red-ranger-icon").off('click');
+      $("#yellow-ranger-icon").off('click');
+      $("#pink-ranger-icon").off('click');
 
       randomNumOne = randomIntFromInterval(1, 10);
       randomNumTwo = randomIntFromInterval(10, 20);
@@ -44,10 +44,10 @@ function startGame () {
 
     } else if (userSum > guessValue) {
       loseNum++;
-      $("#jewel-one").off('click');
-      $("#jewel-two").off('click');
-      $("#jewel-three").off('click');
-      $("#jewel-four").off('click');
+      $("#blue-ranger-icon").off('click');
+      $("#red-ranger-icon").off('click');
+      $("#yellow-ranger-icon").off('click');
+      $("#pink-ranger-icon").off('click');
 
       randomNumOne = randomIntFromInterval(1, 10);
       randomNumTwo = randomIntFromInterval(10, 20);
@@ -62,25 +62,25 @@ function startGame () {
   $("#display-value").html(guessValue);
   $("#player-value").html(userSum);
 
-  $("#jewel-one").on("click", function () {
+  $("#blue-ranger-icon").on("click", function () {
     userSum += randomNumOne;
     $("#player-value").html(userSum);
     reset();
   });
 
-  $("#jewel-two").on("click", function () {
+  $("#red-ranger-icon").on("click", function () {
     userSum += randomNumTwo;
     $("#player-value").html(userSum);
     reset();
   });
 
-  $("#jewel-three").on("click", function () {
+  $("#yellow-ranger-icon").on("click", function () {
     userSum += randomNumThree;
     $("#player-value").html(userSum);
     reset();
   });
 
-  $("#jewel-four").on("click", function () {
+  $("#pink-ranger-icon").on("click", function () {
     userSum += randomNumFour;
     $("#player-value").html(userSum);
     reset();
