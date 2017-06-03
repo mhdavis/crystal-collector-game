@@ -1,25 +1,56 @@
+/*red ranger
+154px 305px
+black ranger
+5px 158px
+*/
+
+html {
+  background-image: url("../img/power_rangers_background.jpg");
+}
+
+#custom-container {
+  margin-top: 30px;
+}
+
+#power-rangers-logo {
+  width: 40%;
+}
+
+#subtitle-wrapper {
+  margin-top: -0.6em;
+  border-radius: 10px;
+  background-color: #2B2B2B;
+}
+
+#subtitle {
+  margin-top: -0.6em;
+  color: white;
+}
+
+.custom-block {
+  border-radius: 10px;
+  background: #2B2B2B;
+  color: white;
+}
+
 #instructions {
-  border: 1px solid purple;
+  margin: 0.5em;
 }
 
 #display-block {
-  border: 1px solid green;
+  margin: 0.5em;
 }
 
 #win-lose-block {
-  border: 1px solid red;
+  margin: 0.5em;
 }
 
-.row {
-  border: 1px solid blue;
+#button-block {
+  margin: 0.5em;
 }
 
-/*red ranger
-154px 305px
-*/
-
-.custom-button {
-  display: block;
+.custom-button, .custom-button:active {
+  margin: 0.5em;
   width: 160px;
   height: 160px;
   background-image: url("../img/power_rangers_full.png");
@@ -32,9 +63,9 @@
   background-position:5px 10px;
 }
 
-/*black ranger*/
+/*red ranger*/
 #jewel-two {
-  background-position:5px 158px;
+  background-position:154px 305px;
 }
 
 /*yellow ranger*/

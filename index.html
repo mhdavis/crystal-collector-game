@@ -29,28 +29,35 @@
 
   </head>
   <body>
-    <div class="container container-fluid">
+    <div id="custom-container" class="container">
+
+      <div class="text-center">
+        <img id="power-rangers-logo" src="assets/img/power_rangers_logo.png">
+        <div id="subtitle-wrapper">
+          <h3 id="subtitle">Number Collector Game</h3>
+        </div>
+      </div>
 
       <div class="row">
-        <div id="instructions" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div id="instructions" class="custom-block col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <p>Here is how you play the game</p>
         </div>
       </div>
 
       <div class="row">
-        <div id="display-block" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-          <p>User: <span id="display-value"></span></p>
+        <div id="display-block" class="custom-block col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <p>Target: <span id="display-value"></span></p>
           <p>Player: <span id="player-value"></span></p>
         </div>
 
-        <div id="win-lose-block" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <div id="win-lose-block" class="custom-block col-lg-6 col-md-6 col-sm-6 col-xs-6">
           <p>Wins: <span id="wins"></span></p>
           <p>Loses: <span id="losses"></span></p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div id ="button-block" class="custom-block col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
           <button id="jewel-one" class="btn custom-button"></button>
           <button id="jewel-two" class="btn custom-button"></button>
           <button id="jewel-three" class="btn custom-button"></button>
